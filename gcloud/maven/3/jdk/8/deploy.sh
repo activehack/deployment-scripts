@@ -1,0 +1,3 @@
+echo ${BITBUCKET_CLONE_DIR}
+cd ${BITBUCKET_CLONE_DIR}
+echo "ok!"
