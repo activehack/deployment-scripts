@@ -4,10 +4,10 @@ OUTFILE=/tmp/node.tar.xz
 SETUPDIR=/tmp/node-setup
 mkdir -p ${SETUPDIR}
 wget -O ${OUTFILE} ${URL}
-tar -xvf ${OUTFILE} --directory ${SETUPDIR}
+tar -xf ${OUTFILE} --directory ${SETUPDIR}
 cp -rv ${SETUPDIR}/node-*-x64/bin/* /usr/local/bin/
-cp -rv ${SETUPDIR}/node-*-x64/include/* /usr/local/include/
-cp -rv ${SETUPDIR}/node-*-x64/lib/* /usr/local/lib/
-cp -rv ${SETUPDIR}/node-*-x64/share/* /usr/local/share/
+cp -r ${SETUPDIR}/node-*-x64/include/* /usr/local/include/
+cp -r ${SETUPDIR}/node-*-x64/lib/* /usr/local/lib/
+cp -r ${SETUPDIR}/node-*-x64/share/* /usr/local/share/
 rm -rf ${OUTFILE} ${SETUPDIR}
 echo "Node v10 is installed"
