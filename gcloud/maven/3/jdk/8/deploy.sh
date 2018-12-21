@@ -5,7 +5,7 @@ echo ${GOOLE_KEY_DATA} | base64 -d > ${GOOGLE_KEY_FILE}
 echo " [OK]"
 echo "Authenticating google cloud service..."
 gcloud auth activate-service-account --key-file ${GOOGLE_KEY_FILE}
-echo " [OK"
-echo "Check current directory:"
+echo " [OK]"
+echo -n "Check working directory: "
 pwd
 mvn clean -B verify -P DEV -DskipTests appengine:deploy
