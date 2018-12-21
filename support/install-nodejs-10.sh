@@ -5,9 +5,9 @@ SETUPDIR=/tmp/node-setup
 mkdir -p ${SETUPDIR}
 wget -O ${OUTFILE} ${URL}
 tar -xvf ${OUTFILE} --directory ${SETUPDIR}
-mv ${SETUPDIR}/node-*-x64/bin/ /usr/bin/
-mv ${SETUPDIR}/node-*-x64/include/ /usr/include/
-mv ${SETUPDIR}/node-*-x64/lib/ /usr/lib/
-mv ${SETUPDIR}/node-*-x64/share/ /usr/share/
+mv -v ${SETUPDIR}/node-*-x64/bin/ /usr/bin/
+mv -v ${SETUPDIR}/node-*-x64/include/ /usr/include/
+mv -v ${SETUPDIR}/node-*-x64/lib/ /usr/lib/
+mv -v ${SETUPDIR}/node-*-x64/share/ /usr/share/
 rm -rf ${OUTFILE} ${SETUPDIR}
 echo "Node v10 is installed"
