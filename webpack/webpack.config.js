@@ -23,6 +23,14 @@ module.exports = {
       }
     ]
   },
+  'externals':{
+    '$':'jQuery',
+    'jquery':'jQuery',
+    'moment':'moment',
+    'window.moment':'moment',
+    'httpFetch':'httpFetch',
+    'window.httpFetch':'httpFetch'
+  },
   optimization: {
     minimizer: [new UglifyJsPlugin({
       uglifyOptions:{
