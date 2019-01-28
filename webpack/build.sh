@@ -1,2 +1,2 @@
-cd /opt/src
+cd /opt/project
 npm run build
