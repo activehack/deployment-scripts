@@ -42,9 +42,9 @@ module.exports = {
       }
     })]
   },
-  entry: '/opt/project/src/index.js',
+  entry: './src/index.js',
   output: {
     filename: 'main.js',
-    path: '/opt/project/dist'
+    path: path.resolve(__dirname, 'dist')
   }
 };
