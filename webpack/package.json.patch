@@ -1,0 +1,12 @@
+--- package.json	2019-01-28 15:01:32.000000000 +0800
++++ package.json.new	2019-01-28 15:02:13.000000000 +0800
+@@ -4,7 +4,8 @@
+   "description": "",
+   "main": "index.js",
+   "scripts": {
+-    "test": "echo \"Error: no test specified\" && exit 1"
++    "test": "echo \"Error: no test specified\" && exit 1",
++    "build": "webpack --mode production --config webpack.config.js"
+   },
+   "keywords": [],
+   "author": "",
