@@ -34,9 +34,9 @@ module.exports = {
       }
     })]
   },
-  entry: '/opt/src/index.js',
+  entry: './src/index.js',
   output: {
     filename: 'main.js',
-    path: '/opt/dist'
+    path: path.resolve(__dirname, 'dist')
   }
 };
